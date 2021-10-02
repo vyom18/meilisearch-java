@@ -85,9 +85,9 @@ class TestMeiliSearch {
       + "{\"book_id\": 4, \"title\": \"Harry Potter and the Half-Blood Prince\"},"
       + "{\"book_id\": 2, \"title\": \"The Hitchhiker\'s Guide to the Galaxy\"}"
       + "]";
-
+//assigning book/documents
     Client client = new Client(new Config("http://localhost:7700", "masterKey"));
-
+//creating client with the help of masterkey.
     // An index is where the documents are stored.
     Index index = client.index("books");
 
@@ -119,8 +119,8 @@ SearchResult(hits=[{book_id=4.0, title=Harry Potter and the Half-Blood Prince}],
 
 #### Custom Search <!-- omit in toc -->
 
-If you want a custom search, the easiest way is to create a `SearchRequest` object, and set the parameters that you need.<br>
-All the supported options are described in the [search parameters](https://docs.meilisearch.com/reference/features/search_parameters.html) section of the documentation.
+If you want to do custom search, the best way is to create a `SearchRequest` object, and set the parameters that you need to search.<br>
+All the supported options are described in the [search parameters](https://docs.meilisearch.com/reference/features/search_parameters.html) section of the documentation ,you can refer there.
 
 ```java
 import com.meilisearch.sdk.SearchRequest;
@@ -175,4 +175,4 @@ If you want to know more about the development workflow or want to contribute, p
 
 <hr>
 
-**MeiliSearch** provides and maintains many **SDKs and Integration tools** like this one. We want to provide everyone with an **amazing search experience for any kind of project**. If you want to contribute, make suggestions, or just know what's going on right now, visit us in the [integration-guides](https://github.com/meilisearch/integration-guides) repository.
+**MeiliSearch** provides and maintains many **SDKs and Integration tools** like previous one. We want to provide everyone with an **amazing search experience for any kind of project**. If you want to contribute, make suggestions, or just know what's going on right now, visit us in the [integration-guides](https://github.com/meilisearch/integration-guides) repository.
